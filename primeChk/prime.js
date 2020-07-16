@@ -3,8 +3,10 @@
 while(true) {
     let num,
     i,
-    temp;
-  num = prompt('양의 정수를 입력하세요. 종료: 0', 37);
+    j,
+    result,
+    string = '';
+  num = prompt('양의 정수를 입력하세요. 종료: 0', 10);
   num = Number(num);
 
   if(num === 0) {
@@ -16,13 +18,13 @@ while(true) {
   }
 
   for(i=2; i<num; i++) {
-    if(num%i === 0)
-      break;
+    for(j=2; j<i; j++) {
+      if(i%j === 0)
+        break;
+    }
+    if(j === i)
+      string += j + ', '
   }
-
-  if(i === num){
-    alert(`${num}은 소수입니다.`);
-  } else {
-    alert(`${num}은 소수가 아닙니다.`);
-  }
+  result = string.substring(0, string.length-2);
+  alert(`${num}: ${result}`);
 }
