@@ -17,7 +17,7 @@ while(true) {
     continue;
   }
 
-  for(i=2; i<num; i++) {
+  for(i=2; i<=num; i++) {
     for(j=2; j<i; j++) {
       if(i%j === 0)
         break;
