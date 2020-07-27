@@ -88,7 +88,7 @@ function addList() {
   dataArr[0] =  ['세미나 주제', '직책', '지역', '참가비', '다운로드', '삭제'];
   dataArr[1] = ['SW 교육 컨퍼런스', '개발자, 팀장, 과장, 부장', '서울', '유료', '<a class="ico-down" href="#"></a>', '<a class="ico-trash" href="#" onclick="deleteRow(1)"></a>'];
   dataArr[2] = ['2020 개발자 포럼', '개발자', '경기', '유료', '', '<a class="ico-trash" href="#" onclick="deleteRow(2)"></a>'];
-  dataArr[3] = ['엑스퍼트 6월 세미나', '팀장, 부장', '인천', '유료', '<a class="ico-down" href="#" onclick="deleteRow(3)"></a>', '<a class="ico-trash" href="#"></a>'];
+  dataArr[3] = ['엑스퍼트 6월 세미나', '팀장, 부장', '인천', '유료', '<a class="ico-down" href="#"></a>', '<a class="ico-trash" href="#" onclick="deleteRow(3)"></a>'];
 
   let temp = "";
   row = dataArr.length;
