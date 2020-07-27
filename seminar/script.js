@@ -157,6 +157,8 @@ function printTable() {
 
 
 function deleteRow(rowIndex) {
-  dataArr[rowIndex] = '';
-  printTable();
+  if(confirm('삭제하시겠습니까?')) {
+    dataArr[rowIndex] = '';
+    printTable();
+  }
 }
